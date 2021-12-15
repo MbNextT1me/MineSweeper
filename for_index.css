@@ -1,0 +1,84 @@
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: #707070;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	font-size: 24px;
+}
+
+.FlagsAmount {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+.BombsAmount {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+.field-container {
+	min-height: 100vh;
+   display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.field {
+	padding: 2% 0px 0px 0px;
+	width: 1280px;
+	height: 800px;
+	flex-wrap: wrap;
+}
+
+.field__row {
+	width: 100%;
+	margin: 0px 0px 8px 0px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.field__block {
+	justify-content:center;
+	align-items: center;
+
+	text-align: center;	
+	display: flex;
+	height: 40px;
+	width: 40px;
+	margin-right: 8px;
+	background: #BBBBBB 0% 0% no-repeat padding-box;
+	border: 1px solid #707070;
+}
+
+.bomb-visible{
+	background-size: cover!important;
+	background-color: #C42828!important;
+	background-image: url("./img/bomb.svg") !important;
+}
+
+.flag {
+	background-color: white;
+	background-size: cover;
+	background-image: url("./img/flag.svg");
+}
+
+.checked {				
+	background-color: white;
+}
+
+.field__block:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px #04BEEE80;
+}
